@@ -1,0 +1,22 @@
+.table-container {
+  max-height: 300px; /* Adjust as needed */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+table {
+  border-collapse: collapse;        
+  width: 100%;
+}
+.loading-indicator,
+.end-of-data-indicator {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+table thead{
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  }
+
+

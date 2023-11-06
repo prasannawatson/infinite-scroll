@@ -1,0 +1,25 @@
+<input type="text" [(ngModel)]="searchText" placeholder="Serach any fields"/>
+<div #scrollContainer class="table-container">
+  <table>
+    <thead>
+      <th *ngFor="let value of header">
+       <tr>{{value}}</tr>
+      </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data | searchFilter: searchText">
+       <td>{{item.id}}</td>
+       <td>{{item.name}}</td>
+       <td>{{item.webSite}}</td>
+       <td>{{item.logo}}</td>
+       <td>{{item.address}}</td>
+       <td>{{item.zipcode}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="loading" class="loading-indicator">Loading...</div>
+  <div *ngIf="endOfData" class="end-of-data-indicator">End of Data</div>
+</div>
+
+
