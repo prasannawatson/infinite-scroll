@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+/app.service
+/infinite-scroll
+/infinite-scroll-test
+/package
+/
